@@ -7,7 +7,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 server '192.168.1.18', user: 'deploy', roles: %w{app db web}
-
+set :pg_ask_for_password, true # Prompts user for password on execution of setup
 
 # role-based syntax
 # ==================
